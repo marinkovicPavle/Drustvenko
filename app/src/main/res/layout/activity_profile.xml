@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/crop"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/register_firstname_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:iconSignifier="@drawable/firtstnameicon"
+            app:labelText="@string/prompt_firstname"
+            app:primaryColor="@color/white"
+            app:secondaryColor="@color/white">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/register_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:nextFocusRight="@+id/register_lastname"
+                android:textColor="#FFFF"
+                android:inputType="textPersonName" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/register_lasttname_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:iconSignifier="@drawable/firtstnameicon"
+            app:labelText="@string/prompt_lastname"
+            app:primaryColor="@color/white"
+            app:secondaryColor="@color/white">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/register_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:nextFocusRight="@+id/register_username"
+                android:textColor="#FFFF"
+                android:inputType="textPersonName" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/register_username_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:iconSignifier="@drawable/usernameicon"
+            app:labelText="@string/prompt_username"
+            app:primaryColor="@color/white"
+            app:secondaryColor="@color/white">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/register_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:nextFocusRight="@+id/register_email"
+                android:textColor="#FFFF"
+                android:inputType="textPersonName" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/register_email_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:iconSignifier="@drawable/emailicon"
+            app:labelText="@string/prompt_email"
+            app:primaryColor="@color/white"
+            app:secondaryColor="@color/white">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/register_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:nextFocusRight="@+id/register_password"
+                android:textColor="#FFFF"
+                android:inputType="textAutoComplete|textEmailAddress" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/register_old_password_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:iconSignifier="@drawable/passicon"
+            app:labelText="Old Password"
+            app:primaryColor="@color/white"
+            app:secondaryColor="@color/white">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/register_old_password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF"/>
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/register_password_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:iconSignifier="@drawable/passicon"
+            app:labelText="@string/prompt_password"
+            app:primaryColor="@color/white"
+            app:secondaryColor="@color/white">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/register_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:nextFocusRight="@+id/register_confirm_password"
+                android:textColor="#FFFF"
+                android:inputType="textPassword" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/register_confirm_password_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:iconSignifier="@drawable/passicon"
+            app:labelText="@string/prompt_password_again"
+            app:primaryColor="@color/white"
+            app:secondaryColor="@color/white">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/register_confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionGo"
+                android:textColor="#FFFF"
+                android:inputType="textPassword" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save_button"
+                style="?android:textAppearanceMedium"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="saveOnClick"
+                android:text="@string/action_save"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavView_Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_google_signin_btn_text_light_normal_background"
+                android:gravity="bottom"
+                app:menu="@menu/bottom_navigation_menu">
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "717275983830",
+    "firebase_url": "https://chatapp-81dda.firebaseio.com",
+    "project_id": "chatapp-81dda",
+    "storage_bucket": "chatapp-81dda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717275983830:android:c9fca00ae927ba12f73e77",
+        "android_client_info": {
+          "package_name": "com.marinkovic.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717275983830-a0hkq5c755ee1fp6kk200j0nnbiaai3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeNAPXRODT-_ATkE7zHZbUa4hPialR8Ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717275983830-a0hkq5c755ee1fp6kk200j0nnbiaai3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
